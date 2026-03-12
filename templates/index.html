@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Усі квитки</title>
+</head>
+<body>
+  <h2>Усі квитки</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Користувач</th>
+        <th>Захід</th>
+        <th>Ціна</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for ticket in tickets %}
+      <tr>
+        <td>{{ ticket.id }}</td>
+        <td>{{ users[ticket.user_id] }}</td>
+        <td>{{ events[ticket.event_id] }}</td>
+        <td>{{ ticket.price }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
