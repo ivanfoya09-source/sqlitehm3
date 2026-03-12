@@ -1,4 +1,5 @@
 from typing import Optional
+
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import String, Float, Boolean, Integer
 from sqlalchemy.orm import Mapped, mapped_column, declarative_base

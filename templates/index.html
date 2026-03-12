@@ -19,8 +19,8 @@
       {% for ticket in tickets %}
       <tr>
         <td>{{ ticket.id }}</td>
-        <td>{{ users[ticket.user_id] }}</td>
-        <td>{{ events[ticket.event_id] }}</td>
+        <td>{{ ticket.user.name }}</td>
+        <td>{{ ticket.event.title }}</td>
         <td>{{ ticket.price }}</td>
       </tr>
       {% endfor %}
